@@ -15,4 +15,17 @@ for i in range(len(lista_de_listas)):
     elemento_mayor = reduce(mayor,lista_de_listas[i])
     print(elemento_mayor)
 
+# SEGUNDO EJERCICIO
+elementos =  [3, 4, 8, 5, 5, 22, 13]
 
+def es_primo(n):
+    primo=True
+
+    for i in range(2,n-1):
+        if(n%i == 0):
+            primo = False
+
+    return primo
+
+primos = list(filter(es_primo, elementos))
+print(primos)
