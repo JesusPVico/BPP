@@ -26,7 +26,6 @@ con su ejecución.
 # Importamos las librerías necesarias para el programa
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 # En primer lugar leemos el fichero csv y comprobamos que no haya error en la lectura
 try:
@@ -206,8 +205,3 @@ for i in range(0, len(vector_ingresos)):
     vector_ingresos[i]=ingreso
 
 print(f"Los ingresos totales a lo largo del año han sido  {sum(vector_ingresos)}")
-
-print("\n")
-#Opcional: Realice una gráfica de la evolución de ingresos a lo largo del año
-plt.bar(columnas,vector_ingresos)
-plt.show()
